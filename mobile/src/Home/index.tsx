@@ -32,7 +32,7 @@ export default function Home() {
   const filteredData = markers.filter((m) => m.category === filter);
 
   useEffect(() => {
-    fetch("http://192.168.1.230:3000/store").then(async (request) => {
+    fetch("http://192.168.1.230:3333/store").then(async (request) => {
       const data = await request.json();
 
       setMarkers(data);
