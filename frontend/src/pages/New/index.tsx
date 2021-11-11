@@ -100,7 +100,7 @@ export default function New() {
         />
 
         <Input
-          label="Descrição"
+          label="Descrição da Empresa"
           name="description"
           value={formValues.description}
           onChange={setFormValues}

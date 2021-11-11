@@ -1,4 +1,5 @@
-export const categories = [
+/**
+ * export const categories = [
   { key: "empresa", label: "Empresa", url: "media/hospital.png" },
   { key: "funcionario", label: "Usuario", url: "media/hospital.png" },
   {
@@ -7,3 +8,4 @@ export const categories = [
     url: "media/hospital.png",
   }  
 ];
+ */

@@ -32,7 +32,7 @@ export default function Home() {
   const filteredData = markers.filter((m) => m.category === filter);
 
   useEffect(() => {
-    fetch("http://192.168.1.230:3333/store").then(async (request) => {
+    fetch("http://192.168.0.126:3333/store").then(async (request) => {
       const data = await request.json();
 
       setMarkers(data);
@@ -48,7 +48,7 @@ export default function Home() {
       <View style={styles.headerContainer}>
         <Text style={styles.title}>Bem vindo</Text>
         <Text style={styles.subTitle}>
-          Encontre no mapa um ponto do comércio local
+        Encontre no sistema de controle da Findme.id tudo o que você precisa!
         </Text>
       </View>
 
@@ -57,8 +57,8 @@ export default function Home() {
         initialRegion={{
           latitude: markers[0].latitude,
           longitude: markers[0].longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
+          latitudeDelta: -23.660877242588448,
+          longitudeDelta: -46.569156646728516,
         }}
       >
         {(filter ? filteredData : markers).map((item) => {

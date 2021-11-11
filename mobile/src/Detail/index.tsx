@@ -27,13 +27,17 @@ export default function Detail() {
       <Text style={styles.title}>{params.name}</Text>
       <Text style={styles.subTitle}>{params.description}</Text>
 
-      <Text style={styles.section}>Endereço</Text>
-      <Text style={styles.text}>{address?.address.road}</Text>
-      <Text style={styles.text}>{address?.address.city}</Text>
-      <Text style={styles.text}>{address?.address.postcode}</Text>
-      <Text style={styles.text}>{address?.address.state}</Text>
+      <Text style={styles.section}>Dados da Orden de Serviço</Text>
+      <Text style={styles.subTitle}>id: {params.id}</Text>
+      <Text style={styles.text}>Titulo da Ordem de Serviço: {params.titleOS}</Text>
+      <Text style={styles.text}>Descrição: {params.descriptionOS}</Text>
+      <Text style={styles.text}>Desenvolvedor Responsável: {params.dev}</Text>
+      <Text style={styles.text}>Staus da Ordem de Serviço: {params.category}</Text>
+      <Text style={styles.text}>Data de Criação da Ordem de Serviço: {params.created}</Text>
+      
+      
 
-      <Text style={styles.section}>Contato</Text>
+      <Text style={styles.section}>Contato do Desenvolvedor</Text>
       <Text style={styles.text}>{params.contact}</Text>
     </View>
   );
