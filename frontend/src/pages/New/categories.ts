@@ -1,5 +1,8 @@
 /**
- * export const categories = [
+ * 
+ */
+
+ export const categories = [
   { key: "empresa", label: "Empresa", url: "media/hospital.png" },
   { key: "funcionario", label: "Usuario", url: "media/hospital.png" },
   {
@@ -8,4 +11,3 @@
     url: "media/hospital.png",
   }  
 ];
- */

@@ -1,8 +1,5 @@
 /**
- * 
- */
-
- export const categories = [
+ *  export const categories = [
   {
     key: "empresa",
     label: "Empresa",
@@ -15,3 +12,6 @@
     image: require("../../assets/hospital.png"),
   },  
 ]; 
+ */
+
+
